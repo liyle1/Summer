@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width: 50px;
+			height: 50px;
+			background-color: pink;
+			margin: 10px;
+		}
+		.box01 {
+			-webkit-animation: mymove 5s 1s forwards linear;
+			-o-animation: mymove 5s 1s forwards linear;
+			animation: mymove 5s 1s forwards linear;
+		}
+
+		.box02 {
+			-webkit-animation: mymove 5s 1s forwards ease;
+			-o-animation: mymove 5s 1s forwards ease;
+			animation: mymove 5s 1s forwards ease;
+		}
+
+		.box03 {
+			-webkit-animation: mymove 5s 1s forwards ease-in;
+			-o-animation: mymove 5s 1s forwards ease-in;
+			animation: mymove 5s 1s forwards ease-in;
+		}
+
+		.box04 {
+			-webkit-animation: mymove 5s 1s forwards ease-out;
+			-o-animation: mymove 5s 1s forwards ease-out;
+			animation: mymove 5s 1s forwards ease-out;
+		}
+
+		.box05 {
+			-webkit-animation: mymove 5s 1s forwards ease-in-out;
+			-o-animation: mymove 5s 1s forwards ease-in-out;
+			animation: mymove 5s 1s forwards ease-in-out;
+		}
+
+		@keyframes mymove {
+			0% {
+				-webkit-transform: translateX(0);
+				-ms-transform: translateX(0);
+				-o-transform: translateX(0);
+				transform: translateX(0);
+			}
+
+			0% {
+				-webkit-transform: translateX(800px);
+				-ms-transform: translateX(800px);
+				-o-transform: translateX(800px);
+				transform: translateX(800px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box01"></div>
+	<div class="box02"></div>
+	<div class="box03"></div>
+	<div class="box04"></div>
+	<div class="box05"></div>
+</body>
+</html>

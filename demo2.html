@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			background-color: pink;
+			width: 200px;
+			height: 400px;
+			margin: 50px auto;
+		}
+
+		.box {
+			-webkit-animation: mymove 3s;
+			-o-animation: mymove 3s;
+			animation: mymove 3s;
+		}
+
+		@keyframes mymove {
+			0% {
+				-webkit-transform: translateX(200px) rotate(30deg);
+				-ms-transform: translateX(200px) rotate(30deg);
+				-o-transform: translateX(200px) rotate(30deg);
+				transform: translateX(200px) rotate(30deg);
+			}
+
+			30% {
+				-webkit-transform: translateX(-150px) rotate(-25deg);
+				-ms-transform: translateX(-150px) rotate(-25deg);
+				-o-transform: translateX(-150px) rotate(-25deg);
+				transform: translateX(-150px) rotate(-25deg);
+			}
+
+			50% {
+				-webkit-transform: translateX(100px) rotate(20deg);
+				-ms-transform: translateX(100px) rotate(20deg);
+				-o-transform: translateX(100px) rotate(20deg);
+				transform: translateX(100px) rotate(20deg);
+			}
+
+			70% {
+				-webkit-transform: translateX(-50px) rotate(-10deg);
+				-ms-transform: translateX(-50px) rotate(-10deg);
+				-o-transform: translateX(-50px) rotate(-10deg);
+				transform: translateX(-50px) rotate(-10deg);
+			}
+
+			90% {
+				-webkit-transform: translateX(25px) rotate(5deg);
+				-ms-transform: translateX(25px) rotate(5deg);
+				-o-transform: translateX(25px) rotate(5deg);
+				transform: translateX(25px) rotate(5deg);
+			}
+
+			100% {
+				-webkit-transform: translateX(0px) rotate(0deg);
+				-ms-transform: translateX(0px) rotate(0deg);
+				-o-transform: translateX(0px) rotate(0deg);
+				transform: translateX(0px) rotate(0deg);
+				}
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
